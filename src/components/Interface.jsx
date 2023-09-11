@@ -46,10 +46,11 @@ const AboutSection = () => {
       <h1 className="text-6xl font-extrabold leading-snug">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic">Benitez Carlos Daniel</span>
+        <span className="bg-white px-1 italic p-3">Benitez Carlos Daniel</span>
       </h1>
+      <br />
       <motion.p
-        className="bg-white text-lg text-gray-600 mt-4"
+        className="bg-white text-lg text-gray-600 mt-4 p-3"
         initial={{
           opacity: 0,
           y: 25,
@@ -71,13 +72,13 @@ const AboutSection = () => {
         JavaScript, React, Vite, HTML5, CSS3 and related frameworks.
         <br />
         I create dynamic and attractive web interfaces.
-        
+
       </motion.p>
-      
-      
+
+
       <motion.button
         className={`bg-indigo-600 text-white py-4 px-8 
-      rounded-lg font-bold text-lg mt-16`}
+      rounded-lg font-bold text-lg mt-16 `}
         initial={{
           opacity: 0,
           y: 25,
@@ -91,7 +92,9 @@ const AboutSection = () => {
           delay: 2,
         }}
       >
-        Contact me
+        <a href="https://wa.me/1127390494">
+          Contact me
+        </a>
       </motion.button>
 
     </Section>
@@ -108,11 +111,11 @@ const skills = [
     level: 90,
   },
   {
-    title: "HTML5 / CSS3",
+    title: "HTML5 / CSS3 / SASS",
     level: 90,
   },
   {
-    title: "Typescript",
+    title: "Typescript / Bootstrap ",
     level: 60,
   },
   {
@@ -120,7 +123,7 @@ const skills = [
     level: 40,
   },
   {
-    title: "3D Modeling",
+    title: "3D Modeling /  FramerMotion",
     level: 40,
   },
 ];
@@ -238,41 +241,69 @@ const SkillsSection = () => {
 
 const ContactSection = () => {
   return (
-    <div className="socialContainer">
+    <>
+      <div className="socialContainer">
 
+        <div>
+          <a href="https://wa.me/1127390494">
+
+            <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_1280.png" alt="whatsapp" />
+
+          </a>
+        </div>
+
+        <div>
+          <a rel="stylesheet" href="https://github.com/CarlosDanielBenitez">
+
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png" alt="github">
+            </img>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/danidev33/">
+
+            <img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png" alt="linkedin" />
+          </a>
+        </div>
+
+
+
+      </div >
       <div>
-        <a href="https://wa.me/1127390494">
 
-          <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_1280.png" alt="whatsapp" />
+        <img src="../../src/img/qr-whatsapp.jpeg" alt="whatsapp" className="p-2 "/>
+      </div>
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: -5 }}
+        whileTap={{
+          scale: 0.8,
+          rotate:5,
+          borderRadius: "100%"
+        }}
+      >
+        <h2 className="text-2xl font-bold m-1">My Certificates</h2>
+      </motion.div>
+      <div className="titlesContainer h-auto pb-4 ml-2 mr-2">
+        <div>
+          <img src="../../src/img/js.png" alt="" />
+        </div>
+        <div>
+          <img src="../../src/img/react-js-career.png" alt="" />
+        </div>
+        <div>
+          <img src="../../src/img/react-js.png" alt="" />
+        </div>
+        <div>
+          <img src="../../src/img/web-developer.png" alt="" />
+        </div>
 
-        </a>
+        {/* <div><img src="" alt="" /></div>
+        <div><img src="" alt="" /></div>
+        <div><img src="" alt="" /></div> */}
       </div>
 
-      <div>
+    </>
 
-
-        <a rel="stylesheet" href="https://github.com/CarlosDanielBenitez">
-
-          <img src="https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png" alt="github">
-          </img>
-        </a>
-
-
-
-      </div>
-
-      <div>
-        <a href="https://www.linkedin.com/in/danidev33/">
-
-        <img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png" alt="linkedin" />
-        </a>
-      </div>
-
-      <div>
-        <img src="../img/QR-whatsapp.jpeg" alt="whatsapp" />
-
-      </div>
-
-    </div >
   );
 };
