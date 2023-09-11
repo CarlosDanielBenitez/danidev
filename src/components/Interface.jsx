@@ -49,7 +49,7 @@ const AboutSection = () => {
         <span className="bg-white px-1 italic">Benitez Carlos Daniel</span>
       </h1>
       <motion.p
-        className="text-lg text-gray-600 mt-4"
+        className="bg-white text-lg text-gray-600 mt-4"
         initial={{
           opacity: 0,
           y: 25,
@@ -63,16 +63,18 @@ const AboutSection = () => {
           delay: 1.5,
         }}
       >
-        I'm  Frontend Developer 
+        I'm  Frontend Developer
+
+        with experience in
         <br />
-         with experience in
-        <br />
-     
+
         JavaScript, React, Vite, HTML5, CSS3 and related frameworks.
         <br />
-         I create dynamic and attractive web interfaces.
+        I create dynamic and attractive web interfaces.
         
       </motion.p>
+      
+      
       <motion.button
         className={`bg-indigo-600 text-white py-4 px-8 
       rounded-lg font-bold text-lg mt-16`}
@@ -91,6 +93,7 @@ const AboutSection = () => {
       >
         Contact me
       </motion.button>
+
     </Section>
   );
 };
@@ -101,11 +104,11 @@ const skills = [
     level: 90,
   },
   {
-    title: "React / Vite JS",
+    title: "React JS / Vite JS",
     level: 90,
   },
   {
-    title: "CSS3",
+    title: "HTML5 / CSS3",
     level: 90,
   },
   {
@@ -113,7 +116,7 @@ const skills = [
     level: 60,
   },
   {
-    title: "Nodejs",
+    title: "Node JS",
     level: 40,
   },
   {
@@ -235,47 +238,41 @@ const SkillsSection = () => {
 
 const ContactSection = () => {
   return (
-    <Section>
-      <h2 className="text-5xl font-bold">Contact me</h2>
-      <div className="mt-8 p-8 rounded-md bg-white w-96 max-w-full">
-        <form>
-          <label for="name" className="font-medium text-gray-900 block mb-1">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <label
-            for="email"
-            className="font-medium text-gray-900 block mb-1 mt-8"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <label
-            for="email"
-            className="font-medium text-gray-900 block mb-1 mt-8"
-          >
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            className="h-32 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
-          />
-          <button className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
-            Submit
-          </button>
-        </form>
+    <div className="socialContainer">
+
+      <div>
+        <a href="https://wa.me/1127390494">
+
+          <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_1280.png" alt="whatsapp" />
+
+        </a>
       </div>
-    </Section>
+
+      <div>
+
+
+        <a rel="stylesheet" href="https://github.com/CarlosDanielBenitez">
+
+          <img src="https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png" alt="github">
+          </img>
+        </a>
+
+
+
+      </div>
+
+      <div>
+        <a href="https://www.linkedin.com/in/danidev33/">
+
+        <img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png" alt="linkedin" />
+        </a>
+      </div>
+
+      <div>
+        <img src="../img/QR-whatsapp.jpeg" alt="whatsapp" />
+
+      </div>
+
+    </div >
   );
 };
