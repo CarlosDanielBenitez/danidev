@@ -12,14 +12,15 @@ body {
 }
 .socialContainer{
   width: 100%;
-  height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 3rem;
+  justify-content: center;
+  column-gap: 10px;
 }
 .socialContainer div {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   transition: all ease-in-out .3s;
 
 }
@@ -35,12 +36,13 @@ body {
   align-items: center;
   justify-content: space-around;
   column-gap: 5px;
+  flex-wrap: wrap;
 }
 .titlesContainer a {
-  width:11rem;
-  height: 11rem;
+  width:200px;
+  height: 200px;
+  padding: .5rem;
   transition: all ease-in-out .3s;
-  margin-top: .7rem;
 }
 .titlesContainer a:hover, .socialContainer div:hover{
   scale: 1.05;

@@ -7,7 +7,7 @@ const Section = (props) => {
   return (
     <motion.section
       className={`
-  h-screen w-screen p-8 max-w-screen-2xl mx-auto
+  h-screen w-screen max-w-screen-2xl mx-auto
   flex flex-col items-start justify-center
   `}
       initial={{
@@ -47,11 +47,11 @@ const AboutSection = () => {
       <h1 className="text-6xl font-extrabold leading-snug">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic p-3">Benitez Carlos Daniel</span>
+        <span className="bg-white px-1 italic p-3 rounded">Benitez Carlos Daniel</span>
       </h1>
       <br />
       <motion.p
-        className="bg-white text-lg text-gray-600 mt-4 p-3"
+        className="bg-white text-lg text-gray-600 mt-4 p-3 rounded"
         initial={{
           opacity: 0,
           y: 25,
@@ -245,7 +245,7 @@ const SkillsSection = () => {
 const ContactSection = () => {
   return (
     <>
-      <div className="socialContainer mt-30">
+      <div className="socialContainer ">
 
         <div>
           <a href="https://wa.me/+5491127390494" target="blanck">
