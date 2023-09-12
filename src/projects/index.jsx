@@ -1,29 +1,60 @@
 import React from 'react'
-
+import "./styles.css"
 export const Card = () => {
     return (
         <div className='layoutCard'>
-            <p name="Mercado - Simple" description='Is a web platform similar to MercadoLibre.' linkHosting='https://mercadosimple.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/mercado-simple.git' />
+            <div>
+                <a href='https://mercadosimple.netlify.app/' >Mercado - Simple</a>
+                <a href="https://github.com/CarlosDanielBenitez/mercado-simple.git">GitHub</a>
+            </div>
 
-            <p name="Robots - Man" description='Online robot store.' linkHosting='https://robotsman.netlify.app' linkRepository='https://github.com/CarlosDanielBenitez/robots-man.git' />
+            <div>
+                <a href='https://robotsman.netlify.app' >Robots - Man</a>
+                <a href="https://github.com/CarlosDanielBenitez/robots-man.git">GitHub</a>
+            </div>
+
+            <div>
+                <a href='https://flocken.netlify.app' >Flocken</a>
+                <a href="https://github.com/CarlosDanielBenitez/flocken.git">GitHub</a>
+            </div>
+
+            <div>
+                <a href='https://cardofcredit.netlify.app' >Card</a>
+                <a href="https://github.com/CarlosDanielBenitez/card.git">GitHub</a>
+            </div>
+
+            <div>
+                <a href='https://resultssummary33.netlify.app' >Summary</a>
+                <a href="https://github.com/CarlosDanielBenitez/results-summary.git">GitHub</a>
+            </div>
+            <div>
+                <a href='https://bellarobba.com.ar' >BellaRobba</a>
+                <a href="https://github.com/CarlosDanielBenitez/BellaRobba.git">GitHub</a>
+            </div>
+
+            <div>
+                <a href='https://calculators33.netlify.app' >Calculator</a>
+                <a href="https://github.com/CarlosDanielBenitez/mobile-calculator.git">GitHub</a>
+            </div>
+
+            <div>
+                <a href='https://chosingadream.netlify.app' >Chosing A Dream</a>
+                <a href="https://github.com/CarlosDanielBenitez/chosing-a-dream.git">GitHub</a>
+            </div>
 
 
-            <p name="Flocken" description='Take the driving experience to the next level with our online store.' linkHosting='https://flocken.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/flocken.git' />
+            <div>
+                <a href='https://flying-high.netlify.app' >Flying High</a>
+                <a href="https://github.com/CarlosDanielBenitez/flying-high.git">GitHub</a>
+            </div>
 
-            <p name="Card" description='The safe and reliable site to apply for your credit card.' linkHosting='https://cardofcredit.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/card.git' />
+            <div>
+                <a href='https://socialize33.netlify.app' >Socialize</a>
+                <a href="https://github.com/CarlosDanielBenitez/socialize.git">GitHub</a>
+            </div>
 
-            <p name="Resuts - Summary" description='The online tool that allows you to quickly summarize and visualize the results.' linkHosting='https://resultssummary33.netlify.app' linkRepository='https://github.com/CarlosDanielBenitez/results-summary.git' />
 
-            <p name="BellaRobba" description='The coziest pet beds online store.' linkHosting='https://bellarobba.com.ar' linkRepository='https://github.com/CarlosDanielBenitez/BellaRobba.git' />
-
-            <p name="Calculator" description='The coziest pet beds online store.' linkHosting='https://calculators33.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/mobile-calculator.git' />
-
-            <p name="Chosing A Dream" description='Source of failures that become successes.' linkHosting='https://chosingadream.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/chosing-a-dream.git' />
-
-            <p name="Flying High" description='Flight and adventure web page with modern design, aviation news' linkHosting='https://flying-high.netlify.app/' linkRepository='https://github.com/CarlosDanielBenitez/flying-high.git' />
-
-            <p name="Socialize" description='Is a dynamic and vibrant social network.' linkHosting='https://socialize33.netlify.app' linkRepository='https://github.com/CarlosDanielBenitez/socialize.git' />
         </div>
     )
-    
+
 }

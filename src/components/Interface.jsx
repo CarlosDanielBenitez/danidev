@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Card } from "../projects";
 
 const Section = (props) => {
   const { children } = props;
@@ -33,7 +34,7 @@ export const Interface = () => {
       <AboutSection />
       <SkillsSection />
       <Section>
-        <h1>Projects</h1>
+        <Card/>
       </Section>
       <ContactSection />
     </div>
@@ -71,7 +72,9 @@ const AboutSection = () => {
 
         JavaScript, React, Vite, HTML5, CSS3 and related frameworks.
         <br />
-        I create dynamic and attractive web interfaces.
+        I create dynamic and attractive web interfaces 
+        <br />
+         with artificial intelligence.
 
       </motion.p>
 
@@ -92,7 +95,7 @@ const AboutSection = () => {
           delay: 2,
         }}
       >
-        <a href="https://wa.me/1127390494">
+        <a href="https://wa.me/+5491127390494" target="blanck">
           Contact me
         </a>
       </motion.button>
@@ -103,7 +106,7 @@ const AboutSection = () => {
 
 const skills = [
   {
-    title: "Javascript Language",
+    title: "Javascript Language / Artificial Intelligence",
     level: 90,
   },
   {
@@ -115,11 +118,11 @@ const skills = [
     level: 90,
   },
   {
-    title: "Typescript / Bootstrap ",
+    title: "Typescript / Bootstrap / Taildwind",
     level: 60,
   },
   {
-    title: "Node JS",
+    title: "Node JS / Firebase",
     level: 40,
   },
   {
@@ -245,7 +248,7 @@ const ContactSection = () => {
       <div className="socialContainer mt-30">
 
         <div>
-          <a target="blanck" href="https://wa.me/1127390494">
+          <a href="https://wa.me/+5491127390494" target="blanck">
 
             <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_1280.png" alt="whatsapp" />
 
@@ -295,9 +298,7 @@ const ContactSection = () => {
           <img src="https://img.freepik.com/vector-gratis/desarrollador-java-software-smartphone-codificacion-javascript-aplicacion-escritura-programacion-css-manipulacion-codigo-fuente-html-programa-movil-ilustracion-metafora-concepto-aislado_335657-1153.jpg?w=740&t=st=1694521474~exp=1694522074~hmac=60af77cee7f2ff6595e0938461093147946a3384533f12dc4775640afb6a4b6a" alt="Web Developer" />
         </a>
 
-        {/* <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div> */}
+       
       </div>
 
     </>

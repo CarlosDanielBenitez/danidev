@@ -20,7 +20,7 @@ body {
 .socialContainer div {
   width: 5rem;
   height: 5rem;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out .3s;
 
 }
 .socialContainer div img, .titlesContainer  a img {
@@ -39,7 +39,7 @@ body {
 .titlesContainer a {
   width:11rem;
   height: 11rem;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out .3s;
   margin-top: .7rem;
 }
 .titlesContainer a:hover, .socialContainer div:hover{
