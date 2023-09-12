@@ -242,10 +242,10 @@ const SkillsSection = () => {
 const ContactSection = () => {
   return (
     <>
-      <div className="socialContainer">
+      <div className="socialContainer mt-30">
 
         <div>
-          <a href="https://wa.me/1127390494">
+          <a target="blanck" href="https://wa.me/1127390494">
 
             <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_1280.png" alt="whatsapp" />
 
@@ -253,7 +253,7 @@ const ContactSection = () => {
         </div>
 
         <div>
-          <a rel="stylesheet" href="https://github.com/CarlosDanielBenitez">
+          <a target="blanck" rel="stylesheet" href="https://github.com/CarlosDanielBenitez">
 
             <img src="https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png" alt="github">
             </img>
@@ -261,7 +261,7 @@ const ContactSection = () => {
         </div>
 
         <div>
-          <a href="https://www.linkedin.com/in/danidev33/">
+          <a target="blanck" href="https://www.linkedin.com/in/danidev33/">
 
             <img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png" alt="linkedin" />
           </a>
@@ -270,33 +270,30 @@ const ContactSection = () => {
 
 
       </div >
-      <div>
 
-        <img src="../../src/img/qr-whatsapp.jpeg" alt="whatsapp" className="p-2 "/>
-      </div>
       <motion.div
         whileHover={{ scale: 1.2, rotate: -5 }}
         whileTap={{
           scale: 0.8,
-          rotate:5,
+          rotate: 5,
           borderRadius: "100%"
         }}
       >
         <h2 className="text-2xl font-bold m-1">My Certificates</h2>
       </motion.div>
       <div className="titlesContainer h-auto pb-4 ml-2 mr-2">
-        <div>
-          <img src="../../src/img/js.png" alt="" />
-        </div>
-        <div>
-          <img src="../../src/img/react-js-career.png" alt="" />
-        </div>
-        <div>
-          <img src="../../src/img/react-js.png" alt="" />
-        </div>
-        <div>
-          <img src="../../src/img/web-developer.png" alt="" />
-        </div>
+        <a target="blanck" href="https://www.coderhouse.com/certificados/642f12aa42aa7300021fda55?lang=es">
+          <img src="https://img.freepik.com/vector-gratis/programadores-que-utilizan-lenguaje-programacion-javascript-computadora-gente-pequena-lenguaje-javascript-motor-javascript-concepto-desarrollo-web-js-ilustracion-aislada-violeta-vibrante-brillante_335657-986.jpg" alt="JavaScript" />
+        </a>
+        <a target="blanck" href="https://www.coderhouse.com/certificados/64d577f9ba5b7b6419106f13?lang=es">
+          <img src="https://img.freepik.com/vector-gratis/concepto-desarrollo-frontend-mejora-diseno-interfaz-sitio-web-programacion-pagina-web-codificacion-prueba-profesion-ti-ilustracion-vector-plano-aislado_613284-2357.jpg?w=740&t=st=1694522760~exp=1694523360~hmac=9c66803a8f0be3879e501dd4b1bdcd36db64a3a2e7a62d947d199af8c66f132f" alt="React Career" />
+        </a>
+        <a target="blanck" href="https://www.coderhouse.com/certificados/64d577f9ba5b7b229c106f0f?lang=es">
+          <img src="https://img.freepik.com/vector-gratis/reaccionar-ilustracion-concepto-abstracto-aplicacion-movil-nativa-marco-desarrollo-aplicaciones-moviles-nativas-multiplataforma-biblioteca-javascript-interfaz-usuario-sistema-operativo_335657-3350.jpg" alt="React JS" />
+        </a>
+        <a target="blanck" href="https://www.coderhouse.com/certificados/6331c9564cec60000ee7455b?lang=es">
+          <img src="https://img.freepik.com/vector-gratis/desarrollador-java-software-smartphone-codificacion-javascript-aplicacion-escritura-programacion-css-manipulacion-codigo-fuente-html-programa-movil-ilustracion-metafora-concepto-aislado_335657-1153.jpg?w=740&t=st=1694521474~exp=1694522074~hmac=60af77cee7f2ff6595e0938461093147946a3384533f12dc4775640afb6a4b6a" alt="Web Developer" />
+        </a>
 
         {/* <div><img src="" alt="" /></div>
         <div><img src="" alt="" /></div>

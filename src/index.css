@@ -12,6 +12,7 @@ body {
 }
 .socialContainer{
   width: 100%;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,8 +20,10 @@ body {
 .socialContainer div {
   width: 5rem;
   height: 5rem;
+  transition: all ease-in-out .5s;
+
 }
-.socialContainer img, .titlesContainer  div a img {
+.socialContainer div img, .titlesContainer  a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -33,11 +36,17 @@ body {
   justify-content: space-around;
   column-gap: 5px;
 }
-.titlesContainer div {
-  width:600px;
-  height: 200px;
+.titlesContainer a {
+  width:11rem;
+  height: 11rem;
+  transition: all ease-in-out .5s;
+  margin-top: .7rem;
 }
-.titlesContainer div img{
-  object-position: bottom;
+.titlesContainer a:hover, .socialContainer div:hover{
+  scale: 1.05;
+}
+.titlesContainer a img{
+border-radius: .5rem;
+
 }
 
